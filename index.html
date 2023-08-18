@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Money master website</title>
+</head>
+<body>
+    <main>
+        <section class="mt-5">
+         <h1 class="text-center font-bold text-2xl mb-2">Money Master💰</h1>
+        <div class="div-container">
+            <div>
+             <img class="image" src="image/Pexels Photo .png" alt="">
+            </div>
+            <div>
+                <h1 class="font-bold text-center text-xl my-3">Income</h1>
+             <span class="font-bold mx-2">Income:</span> <input id="income" class="w-28" type="text"><br>
+             <h1 class="text-center font-bold text-xl my-3">Expenses</h1>
+              <span class="font-bold mx-4">Food:</span> <input id="food" class="w-28 my-2" type="text"><br>
+              <span class="font-bold mx-4" >Rent:</span><input id="rent" class="w-28 my-2 ml-2" type="text"><br>
+             <span class="font-bold mx-2">Clothes:</span> <input id="clothes" class="w-28 my-2 "type="text"><br>
+             <button onclick="calculateButton()" class="btn btn-secondary ml-20 my-3">Calculate</button>
+             <p class="text-center font-bold text-xl">Total Expenses: <span id="total-expense">0</span> tk</p>
+             <p class="text-center font-bold text-xl ml-16 my-3">Balance: <span id="current-balance">0</span> tk</p>
+             <span class="text-xl font-semibold">Save:</span><input class="w-28 my-2 mx-5" type="text" placeholder="20"> % <button onclick="saveButton()" class="btn btn-primary w-28 ml-4">save</button>
+             <h2 class="text-center font-bold text-xl my-1">Saving Amount: <span id="save-Amount">0</span> tk</h2>
+             <h3 class="text-center font-bold text-xl py-2">Remaining Balance: <span id="reamaing">0</span> tk</h3>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
